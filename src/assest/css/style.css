@@ -1,0 +1,50 @@
+.question {
+	display: flex;
+	/* flex-wrap: wrap; Wrap items if needed on smaller screens */
+	margin-bottom: 1rem;
+  }
+  
+  .sno {
+	font-size: 1rem; /* Default size */
+	font-weight: bold;
+	white-space: nowrap; 
+	border-radius: 50%;
+	text-align: center;
+	border: 1px solid red;
+	padding: 10px 20px;
+	align-items: center;
+  }
+  
+  .mainQues {
+	font-size: 1.1rem; /* Default size for question text */
+	flex-grow: 1; /* Ensure this takes up remaining space */
+  }
+
+  .no-copy {
+	user-select: none; /* Disable text selection */
+	cursor: default; /* Show default cursor to discourage interaction */
+  }
+  
+  @media (max-width: 768px) {
+	.sno {
+	  font-size: 0.9rem; /* Adjust for medium screens */
+	}
+	.mainQues {
+	  font-size: 1rem; /* Slightly smaller question text */
+	}
+  }
+  
+  @media (max-width: 576px) {
+	.question {
+	  /* flex-direction: column;  */
+	  align-items: flex-start; /* Align items to the start */
+	}
+	.sno {
+	  font-size: 0.85rem; /* Adjust for small screens */
+	  margin-bottom: 0.5rem; /* Add spacing below */
+	}
+	.mainQues {
+	  font-size: 0.95rem; /* Adjust question text for small screens */
+	}
+  }
+  

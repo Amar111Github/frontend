@@ -1,0 +1,35 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* gap: 20px; */
+}
+
+.download-link,
+.close-button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-link {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+}
+
+.download-link:hover {
+  background-color: #0056b3;
+}
+
+.close-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.close-button:hover {
+  background-color: #c82333;
+}
